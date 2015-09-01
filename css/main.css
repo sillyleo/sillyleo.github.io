@@ -1,0 +1,180 @@
+/* line 3, ../scss/main.scss */
+body {
+  background: #fafafa;
+  font-family: "Noto Sans CJK TC";
+}
+
+/* line 13, ../scss/main.scss */
+.labs-outter, .mdl-card, .product-image, .product-image a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 17, ../scss/main.scss */
+.labs-outter > div.labs-grow, .mdl-card > div.labs-grow, .product-image > div.labs-grow, .product-image a > div.labs-grow {
+  flex-grow: 1;
+}
+
+/* line 27, ../scss/main.scss */
+.mdl-card__media {
+  flex-grow: 1;
+}
+
+/* line 36, ../scss/main.scss */
+a.logo {
+  width: 200px;
+  display: block;
+  margin: 30px auto;
+}
+/* line 37, ../scss/main.scss */
+a.logo img {
+  width: 200px;
+  height: 200px;
+}
+
+/* line 46, ../scss/main.scss */
+.mdl-card__media {
+  background-color: white;
+}
+
+/* line 50, ../scss/main.scss */
+.mdl-card {
+  min-height: 360px;
+}
+
+/* line 54, ../scss/main.scss */
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* line 59, ../scss/main.scss */
+.avatar {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+/* line 63, ../scss/main.scss */
+.avatar img {
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.0980392);
+  border-radius: 2px;
+}
+/* line 70, ../scss/main.scss */
+.avatar div {
+  padding-left: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+/* line 74, ../scss/main.scss */
+.avatar div strong {
+  color: rgba(0, 0, 0, 0.87);
+}
+/* line 77, ../scss/main.scss */
+.avatar div span {
+  color: #757575;
+}
+
+/* line 83, ../scss/main.scss */
+.product-image {
+  background: transparent;
+}
+/* line 86, ../scss/main.scss */
+.product-image a {
+  text-decoration: none;
+  box-sizing: border-box;
+  flex-grow: 1;
+  background: transparent;
+  vertical-align: bottom;
+}
+
+/* line 98, ../scss/main.scss */
+.mdl-card.intro-card {
+  background: #ff919d;
+}
+/* line 100, ../scss/main.scss */
+.mdl-card.intro-card .mdl-card__media {
+  background: #ff5e6f;
+}
+/* line 103, ../scss/main.scss */
+.mdl-card.intro-card .mdl-card__supporting-text {
+  color: white;
+}
+/* line 107, ../scss/main.scss */
+.mdl-card.intro-card .issue-number {
+  align-self: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: 100;
+  padding: 32px;
+  color: white;
+  font-size: 30px;
+  line-height: 40px;
+}
+/* line 111, ../scss/main.scss */
+.mdl-card.intro-card .issue-number span {
+  opacity: 0.54;
+}
+
+/* line 128, ../scss/main.scss */
+.product.full-card > .mdl-card__supporting-text {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* line 130, ../scss/main.scss */
+.product.full-card > .mdl-card__supporting-text span {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* line 133, ../scss/main.scss */
+.product.full-card > .mdl-card__supporting-text strong {
+  color: white;
+}
+
+/* line 139, ../scss/main.scss */
+.product > .mdl-card__supporting-text {
+  background: white;
+  padding-right: 10%;
+}
+
+/* line 147, ../scss/main.scss */
+.post section {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 16px 0 0 0;
+  box-sizing: border-box;
+}
+/* line 152, ../scss/main.scss */
+.post section p {
+  font-size: 15px;
+}
+/* line 156, ../scss/main.scss */
+.post .product-image a {
+  height: 300px;
+}
+
+/* line 164, ../scss/main.scss */
+.mdl-card.people .product-image {
+  background: white;
+}
+/* line 167, ../scss/main.scss */
+.mdl-card.people strong {
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 0.5em;
+}
+/* line 171, ../scss/main.scss */
+.mdl-card.people .meta {
+  margin-bottom: 1em;
+}
+
+/* line 178, ../scss/main.scss */
+footer {
+  margin-top: 80px;
+}
+
+/* line 182, ../scss/main.scss */
+.footer-wrapper {
+  padding-left: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 45px;
+}

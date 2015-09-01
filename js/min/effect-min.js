@@ -1,0 +1,1 @@
+$(document).ready(function(){var a={selector:".backdrop",parent:".big-bg",exclude:["rgb(0,0,0)","rgba(255,255,255)"],normalizeTextColor:!1,normalizedTextColors:{light:"#fff",dark:"#000"},lumaClasses:{light:"ab-light",dark:"ab-dark"}};$.adaptiveBackground.run(a)});
