@@ -1,6 +1,6 @@
 ---
 published: true
-title: 1345
 layout: post
+title: 1345
 ---
 234
