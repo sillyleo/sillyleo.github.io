@@ -1,0 +1,31 @@
+site:
+    title: Lowly Glowly
+    subtitle: Leo's Personal Notes on Bible
+    logo: -/images/avatar.svg
+    limit: 10
+    theme: theme
+    # disqus: somebody
+    lang: zh
+    url: http://sillyleo.github.io/
+    # root: /blog
+
+authors:
+    me:
+        name: Leo Lin
+        intro: I am just a sinner saved by Christ.
+        avatar: -/images/avatar.svg
+
+build:
+    port: 8000
+    # Copied files to public folder when build
+    copy:
+        - theme/css
+        - theme/js
+        - theme/favicon.ico
+        - theme/robots.txt
+        - source/images
+    # Excuted command when use 'ink publish'
+    publish: |
+        git add . -A
+        git commit -m "update"
+        git push origin
