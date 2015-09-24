@@ -1,28 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
-  <title>InkPaper</title>
-  <id>http://www.inkpaper.io/blog/</id>
-  <updated>2015-09-24T15:52:44+08:00</updated>
-  <subtitle>An Elegant Static Blog Generator</subtitle>
-  <link href="http://www.inkpaper.io/blog/"></link>
+  <title>Lowly Glowly</title>
+  <id>http://sillyleo.github.io</id>
+  <updated>2015-09-24T17:56:20+08:00</updated>
+  <subtitle>Thoughts on Christianity</subtitle>
+  <link href="http://sillyleo.github.io"></link>
   <author>
-    <name>InkPaper</name>
+    <name>Lowly Glowly</name>
   </author>
   <entry>
-    <title>An Elegant Static Blog Generator —— InkPaper</title>
+    <title>Lorem</title>
     <updated>2015-07-04T10:00:00+08:00</updated>
-    <id>tag:,2015-07-04:/www.inkpaper.io/blog/post/2015/03/01/ink-blog-tool-en.html</id>
-    <content type="html">InkPaper is an static blog generator developed by Golang, No dependencies, Cross platform, Easy use, Fast build, Elegant theme</content>
-    <link href="http:/www.inkpaper.io/blog/post/2015/03/01/ink-blog-tool-en.html"></link>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 10.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 10.html"></link>
     <author>
       <name>InkPaper</name>
     </author>
   </entry>
   <entry>
-    <title>简洁的静态博客构建工具 —— 纸小墨（InkPaper）</title>
+    <title>Lorem</title>
     <updated>2015-07-04T10:00:00+08:00</updated>
-    <id>tag:,2015-07-04:/www.inkpaper.io/blog/post/2015/03/01/ink-blog-tool.html</id>
-    <content type="html">纸小墨（InkPaper）是一个使用GO语言编写的静态博客构建工具，可以快速搭建博客网站。优点是无依赖跨平台，配置简单构建快速，注重简洁易用与排版优化</content>
-    <link href="http:/www.inkpaper.io/blog/post/2015/03/01/ink-blog-tool.html"></link>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 11.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 11.html"></link>
+    <author>
+      <name>InkPaper</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Lorem</title>
+    <updated>2015-07-04T10:00:00+08:00</updated>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 2.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 2.html"></link>
+    <author>
+      <name>InkPaper</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Lorem</title>
+    <updated>2015-07-04T10:00:00+08:00</updated>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 3.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 3.html"></link>
+    <author>
+      <name>InkPaper</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Lorem</title>
+    <updated>2015-07-04T10:00:00+08:00</updated>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 4.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 4.html"></link>
+    <author>
+      <name>InkPaper</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Lorem</title>
+    <updated>2015-07-04T10:00:00+08:00</updated>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 5.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 5.html"></link>
+    <author>
+      <name>InkPaper</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Lorem</title>
+    <updated>2015-07-04T10:00:00+08:00</updated>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 6.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 6.html"></link>
+    <author>
+      <name>InkPaper</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Lorem</title>
+    <updated>2015-07-04T10:00:00+08:00</updated>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 7.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 7.html"></link>
+    <author>
+      <name>InkPaper</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Lorem</title>
+    <updated>2015-07-04T10:00:00+08:00</updated>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 8.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 8.html"></link>
+    <author>
+      <name>InkPaper</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Lorem</title>
+    <updated>2015-07-04T10:00:00+08:00</updated>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 9.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy 9.html"></link>
+    <author>
+      <name>InkPaper</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Lorem</title>
+    <updated>2015-07-04T10:00:00+08:00</updated>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool copy.html"></link>
+    <author>
+      <name>InkPaper</name>
+    </author>
+  </entry>
+  <entry>
+    <title>Lorem</title>
+    <updated>2015-07-04T10:00:00+08:00</updated>
+    <id>tag:,2015-07-04:/sillyleo.github.io/post/2015/03/01/ink-blog-tool.html</id>
+    <content type="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nemo excepturi adipisci, delectus, est neque itaque, id ad suscipit, minus tenetur! Illum voluptatibus itaque similique odio quis doloribus maxime omnis.</content>
+    <link href="http:/sillyleo.github.io/post/2015/03/01/ink-blog-tool.html"></link>
     <author>
       <name>InkPaper</name>
     </author>

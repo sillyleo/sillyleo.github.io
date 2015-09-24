@@ -3,6 +3,7 @@
 
   timeSince = function(date) {
     var interval, seconds;
+
     seconds = Math.floor((new Date() - date) / 1000);
     interval = Math.floor(seconds / 31536000);
     if (interval > 1) {
@@ -30,6 +31,7 @@
   $(function() {
     $('.date').each(function(idx, item) {
       var $date, date, timeStr, unixTime;
+
       $date = $(item);
       timeStr = $date.data('time');
       if (timeStr) {
@@ -43,6 +45,7 @@
     });
     $('img').each(function(idx, item) {
       var $item, imageAlt;
+
       $item = $(item);
       if ($item.attr('data-src')) {
         $item.wrap('<a href="' + $item.attr('data-src') + '" target="_blank"></a>');
