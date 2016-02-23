@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>leo2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M27,0 L81,0 L81,9 L27,9 L27,0 L27,0 Z M18,9 L90,9 L90,18 L18,18 L18,9 L18,9 Z M9,18 L99,18 L99,27 L9,27 L9,18 L9,18 Z M0,27 L108,27 L108,45 L0,45 L0,27 L0,27 Z M0,45 L108,45 L108,81 L0,81 L0,45 L0,45 Z M0,81 L108,81 L108,108 L0,108 L0,81 L0,81 Z M9,108 L99,108 L99,117 L9,117 L9,108 L9,108 Z M18,117 L90,117 L90,126 L18,126 L18,117 L18,117 Z M36,126 L72,126 L72,135 L36,135 L36,126 L36,126 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="leo2" sketch:type="MSArtboardGroup">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(27.000000, 36.000000)">
+                <g id="Rectangle-243-+-Rectangle-264" transform="translate(9.000000, 0.000000)">
+                    <mask id="mask-2" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-264" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="-1" y="-2" width="115" height="55.9277344"></rect>
+                </g>
+                <path d="M18,45 L36,45 L36,54 L18,54 L18,45 Z M18,90 L36,90 L36,99 L18,99 L18,90 Z M36,54 L45,54 L45,63 L36,63 L36,54 Z M9,54 L18,54 L18,63 L9,63 L9,54 Z M36,81 L45,81 L45,90 L36,90 L36,81 Z M9,81 L18,81 L18,90 L9,90 L9,81 Z M45,63 L54,63 L54,81 L45,81 L45,63 Z M0,63 L9,63 L9,81 L0,81 L0,63 Z" id="Rectangle-242" fill="#000000" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-250" fill="#000000" sketch:type="MSShapeGroup" x="23" y="68" width="9" height="9"></rect>
+                <rect id="Rectangle-261-Copy-2" fill="#000000" sketch:type="MSShapeGroup" x="45" y="108" width="36" height="9"></rect>
+                <path d="M90,45 L108,45 L108,54 L90,54 L90,45 Z M90,90 L108,90 L108,99 L90,99 L90,90 Z M108,54 L117,54 L117,63 L108,63 L108,54 Z M81,54 L90,54 L90,63 L81,63 L81,54 Z M108,81 L117,81 L117,90 L108,90 L108,81 Z M81,81 L90,81 L90,90 L81,90 L81,81 Z M117,63 L126,63 L126,81 L117,81 L117,63 Z M72,63 L81,63 L81,81 L72,81 L72,63 Z" id="Rectangle-242-Copy-8" fill="#000000" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-260" fill="#000000" sketch:type="MSShapeGroup" x="54" y="63" width="18" height="9"></rect>
+                <rect id="Rectangle-250-Copy" fill="#000000" sketch:type="MSShapeGroup" x="95" y="68" width="9" height="9"></rect>
+            </g>
+            <rect id="Rectangle-374" stroke="#000000" fill="#000000" sketch:type="MSShapeGroup" x="99" y="27" width="9" height="9"></rect>
+            <rect id="Rectangle-374-Copy" stroke="#000000" fill="#000000" sketch:type="MSShapeGroup" x="108" y="18" width="9" height="9"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,3853 @@
+@charset "UTF-8";
+/*!
+Theme Name: iA4
+Theme URI: http://store.ia.net/
+Author: iA, Inc.
+Author URI: http://ia.net/
+Description: Beautiful typography and reduced to essence. It is time to let your content shine with iA4.
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: iA4
+Tags: white, one-column, responsive-layout, custom-header, custom-menu, featured-image-header, theme-options, translation-ready, flexible-header
+
+This theme is licensed under the GPL, and is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+2.0 - Typography
+3.0 - Elements
+4.0 - Forms
+5.0 - Navigation
+  5.1 - Links
+  5.2 - Menus
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+9.0 - Widgets
+10.0 - Content
+  10.1 - Posts and pages
+  10.2 - Asides
+  10.3 - Comments
+11.0 - Infinite scroll
+12.0 - Media
+  12.1 - Captions
+  12.2 - Galleries
+
+
+
+--------------------------------------------------------------*/
+/* tablet */
+/* lower than iPad Portrait */
+/* lower than iPhone 6 Plus */
+/* lower iPhone 5 and smaller */
+/**
+ * Create vendor-prefixed CSS in one go
+ *
+  `@include vendor(border-radius, 4px);`
+ *
+ */
+/**
+ * Pretty Underlines (Only used at navigation)
+ */
+/* line 56, ia.scss */
+.visuallyhidden {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+/* line 62, ia.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, .pagelink a, h4, .custom-field dt, .custom-field dd, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* line 78, ia.scss */
+html {
+  overflow-y: scroll;
+  /* Keeps page centered in all browsers regardless of content height */
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+/* line 87, ia.scss */
+*,
+*:before,
+*:after {
+  /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 95, ia.scss */
+body {
+  background: #FDFDFD;
+  /* Fallback for when there is no custom background color defined. */
+}
+
+/* line 99, ia.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* line 111, ia.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 114, ia.scss */
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 119, ia.scss */
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* line 123, ia.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 126, ia.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 129, ia.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* line 133, ia.scss */
+a img {
+  border: 0;
+}
+
+/* line 136, ia.scss */
+cite {
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* line 140, ia.scss */
+.entry-content label {
+  display: inherit;
+}
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+/* line 146, ia.scss */
+* {
+  font-family: serif;
+  font-size: 100%;
+  color: #222222;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 156, ia.scss */
+  * {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 160, ia.scss */
+  * {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+/* line 164, ia.scss */
+body {
+  background: #FDFDFD;
+}
+
+/* line 167, ia.scss */
+h1,
+h2,
+h3,
+.pagelink a,
+h4,
+.custom-field dt,
+.custom-field dd,
+h5,
+h6 {
+  font-size: 19px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 179, ia.scss */
+  h1,
+  h2,
+  h3,
+  .pagelink a,
+  h4,
+  .custom-field dt,
+  .custom-field dd,
+  h5,
+  h6 {
+    font-size: 16px;
+  }
+}
+/* line 190, ia.scss */
+h1 {
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin: 0 0 32px 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 197, ia.scss */
+  h1 {
+    letter-spacing: 1px;
+    margin: 0 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 201, ia.scss */
+  h1 {
+    margin: 0 0 25px 0;
+  }
+}
+/* line 203, ia.scss */
+h1.site-title {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  clear: both;
+  text-align: left;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: none;
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 213, ia.scss */
+  h1.site-title {
+    line-height: 25px;
+  }
+}
+/* line 215, ia.scss */
+h1.site-title a {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* line 218, ia.scss */
+h1.blog-title {
+  margin: 0;
+}
+
+/* line 221, ia.scss */
+h1 + h2 {
+  margin: -32px 0 32px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 224, ia.scss */
+  h1 + h2 {
+    margin: -25px 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 227, ia.scss */
+  h1 + h2 {
+    margin: -25px 0 25px 0;
+  }
+}
+/* line 230, ia.scss */
+h2 {
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 236, ia.scss */
+  h2 {
+    margin: 0 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 239, ia.scss */
+  h2 {
+    margin: 0 0 25px 0;
+  }
+}
+/* line 241, ia.scss */
+h2.blog-title {
+  margin: 0;
+  text-align: left;
+}
+
+/* line 244, ia.scss */
+h2.portfolio-title {
+  margin-top: -32px;
+  margin-left: -19px;
+  max-width: 800px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 249, ia.scss */
+  h2.portfolio-title {
+    margin-top: -25px;
+    margin-left: -16px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 253, ia.scss */
+  h2.portfolio-title {
+    margin-top: -25px;
+  }
+}
+/* line 256, ia.scss */
+h3, .pagelink a {
+  font-weight: 700;
+}
+
+/* line 259, ia.scss */
+h4, .custom-field dt, .custom-field dd {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* line 263, ia.scss */
+h5 {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 267, ia.scss */
+h6 {
+  font-weight: 400;
+}
+
+/* line 270, ia.scss */
+.center a:hover, .front a:hover {
+  color: #7E7E7E;
+}
+
+/* line 273, ia.scss */
+.front {
+  /* Home Site Paragraph Spacing*/
+}
+
+/* line 275, ia.scss */
+.fronta:hover {
+  color: #7E7E7E;
+}
+
+/* line 277, ia.scss */
+.front.span a:hover {
+  color: #222222;
+}
+
+/* line 279, ia.scss */
+.front .tags {
+  margin-bottom: 0px;
+}
+
+/* line 281, ia.scss */
+.front .center .entry-content, .front .front .entry-content {
+  margin: 0 0 64px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 284, ia.scss */
+  .front .center .entry-content, .front .front .entry-content {
+    margin: 0 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 287, ia.scss */
+  .front .center .entry-content, .front .front .entry-content {
+    margin: 0 0 25px 0;
+  }
+}
+/* line 290, ia.scss */
+p {
+  margin: 0 0 32px 0;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 297, ia.scss */
+  p {
+    text-align: left;
+    margin: 0 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 301, ia.scss */
+  p {
+    text-align: left;
+    margin: 0 0 25px 0;
+  }
+}
+/* line 304, ia.scss */
+p.meta--blog {
+  font-style: italic;
+  margin: 0;
+  text-align: left;
+}
+
+/* line 308, ia.scss */
+p.meta--blog.detail {
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 312, ia.scss */
+  p.meta--blog.detail {
+    margin: 0 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 315, ia.scss */
+  p.meta--blog.detail {
+    margin: 0 0 25px 0;
+  }
+}
+/* line 317, ia.scss */
+p.message {
+  margin: 0 0 96px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 320, ia.scss */
+  p.message {
+    margin: 0 0 75px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 323, ia.scss */
+  p.message {
+    margin: 0 0 75px 0;
+  }
+}
+/* line 326, ia.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 330, ia.scss */
+dfn,
+em,
+i {
+  font-style: italic;
+}
+
+/* line 335, ia.scss */
+blockquote {
+  padding: 0 64px 0 64px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 338, ia.scss */
+  blockquote {
+    padding: 0 50px 0 50px;
+  }
+}
+@media only screen and (max-width: 413px) {
+  /* line 341, ia.scss */
+  blockquote {
+    padding: 0 25px 0 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 344, ia.scss */
+  blockquote {
+    padding: 0 25px 0 25px;
+  }
+}
+/* line 347, ia.scss */
+address {
+  margin: 0 0 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 350, ia.scss */
+  address {
+    margin: 0 0 25px;
+  }
+}
+/* line 353, ia.scss */
+pre {
+  white-space: pre-wrap;
+  margin-bottom: 32px;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 358, ia.scss */
+  pre {
+    margin-bottom: 25px;
+  }
+}
+/* line 361, ia.scss */
+code,
+kbd,
+tt,
+var {
+  font-family: "Courier", monospace;
+}
+
+/* line 367, ia.scss */
+abbr,
+acronym {
+  border-bottom: 1px dotted #222222;
+  cursor: help;
+}
+
+/* line 372, ia.scss */
+mark,
+ins {
+  background: #DADADA;
+  text-decoration: none;
+}
+
+/* line 377, ia.scss */
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 385, ia.scss */
+sup {
+  bottom: 1ex;
+}
+
+/* line 388, ia.scss */
+sub {
+  top: .5ex;
+}
+
+/* line 391, ia.scss */
+a:link {
+  color: #222222;
+}
+
+/* line 393, ia.scss */
+a:visited {
+  color: #222222;
+}
+
+/* line 395, ia.scss */
+a:hover {
+  color: #222222;
+}
+
+/* line 397, ia.scss */
+a:active {
+  color: #222222;
+}
+
+/* line 399, ia.scss */
+a.custom {
+  text-decoration: none;
+}
+
+/* line 402, ia.scss */
+small {
+  font-size: 75%;
+}
+
+/* line 405, ia.scss */
+big {
+  font-size: 125%;
+}
+
+/* line 408, ia.scss */
+figure + p {
+  margin-top: 0;
+  text-indent: 0;
+}
+
+/* line 412, ia.scss */
+h1 + time {
+  margin-top: -32px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 415, ia.scss */
+  h1 + time {
+    margin-top: -25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 418, ia.scss */
+  h1 + time {
+    margin-top: -25px;
+  }
+}
+/* line 421, ia.scss */
+time {
+  margin-bottom: 32px;
+  text-align: center;
+  font-style: italic;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 427, ia.scss */
+  time {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 430, ia.scss */
+  time {
+    margin-bottom: 25px;
+  }
+}
+/* line 433, ia.scss */
+.read-next-wrapper {
+  text-align: right;
+}
+
+/* line 435, ia.scss */
+.read-next-wrapper .read-next {
+  font-style: italic;
+}
+
+/* line 438, ia.scss */
+.post-data {
+  margin: 0 0 64px 0;
+}
+
+/* line 440, ia.scss */
+.post-data .tags {
+  margin: 0 0 0 0;
+}
+
+/* line 442, ia.scss */
+.post-data .tags .tag a {
+  font-style: italic;
+  display: inline-block;
+}
+
+/* line 445, ia.scss */
+.post-data .categories span {
+  display: inline-block;
+}
+
+/* line 448, ia.scss */
+.pagelink {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+/* line 452, ia.scss */
+.pagelink a {
+  margin-left: 30px;
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+/* line 457, ia.scss */
+.custom-field {
+  clear: left;
+}
+
+/* line 459, ia.scss */
+.custom-field dd {
+  font-weight: normal;
+}
+
+/* line 462, ia.scss */
+.entry-content label {
+  margin-left: 0px;
+  text-indent: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 470, ia.scss */
+.entry-content label input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 477, ia.scss */
+.teaser article:hover h2 a {
+  color: #7E7E7E;
+}
+
+/* line 479, ia.scss */
+.teaser article:hover p {
+  color: #7E7E7E;
+}
+
+/* line 481, ia.scss */
+.teaser article:hover h2 {
+  color: #7E7E7E;
+}
+
+/* line 484, ia.scss */
+li.tile.tile-small:hover a {
+  color: #7E7E7E;
+}
+
+/* line 486, ia.scss */
+li.tile.tile-small:hover a p {
+  color: #7E7E7E;
+}
+
+/* line 489, ia.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 492, ia.scss */
+.fake-small-caps, .more__text, .mobile-menu {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 499, ia.scss */
+  .fake-small-caps, .more__text, .mobile-menu {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 503, ia.scss */
+  .fake-small-caps, .more__text, .mobile-menu {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+/* line 510, ia.scss */
+ul,
+ol {
+  margin: 0 0 32px 0;
+}
+
+/* line 514, ia.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 516, ia.scss */
+ul ul, ul ol {
+  margin: 0 0 0 32px;
+}
+
+/* line 518, ia.scss */
+ul ul ul, ul ul ol, ul ol ul, ul ol ol {
+  margin: 0 0 0 64px;
+}
+
+/* line 521, ia.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 523, ia.scss */
+ol ul, ol ol {
+  margin: 0 0 0 32px;
+}
+
+/* line 525, ia.scss */
+ol ul ul, ol ul ol, ol ol ul, ol ol ol {
+  margin: 0 0 0 64px;
+}
+
+/* line 528, ia.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 531, ia.scss */
+dd {
+  margin: 0 0 32px 0;
+}
+
+/* line 534, ia.scss */
+table {
+  font-size: 16px;
+  margin: 0 0 32px 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 539, ia.scss */
+  table {
+    line-height: 25px;
+  }
+}
+/* line 541, ia.scss */
+table tr th {
+  font-weight: bold;
+  background-color: #EEEEEE;
+  /* hides borders and backgrounds of empty table headers */
+  empty-cells: hide;
+  /* hides content of empty table headers */
+}
+
+/* line 547, ia.scss */
+table tr th > *:empty {
+  display: none;
+}
+
+/* line 549, ia.scss */
+table tr th, table tr td {
+  font-size: 16px;
+  line-height: 25px;
+  border-top: 1px solid #222222;
+  border-left: 1px solid #222222;
+  padding: 6px;
+}
+
+/* line 555, ia.scss */
+table tr th:last-child, table tr td:last-child {
+  border-right: 1px solid #222222;
+}
+
+/* line 557, ia.scss */
+table tr:last-child th, table tr:last-child td {
+  border-bottom: 1px solid #222222;
+}
+
+/* line 559, ia.scss */
+table tfoot tr:last-child th, table tfoot tr:last-child td {
+  border-top: none;
+}
+
+/* line 561, ia.scss */
+table thead tr:last-child th, table thead tr:last-child td {
+  border-bottom: none;
+}
+
+/* line 564, ia.scss */
+hr {
+  background-color: #222222;
+  border: 0;
+  height: 1px;
+}
+
+/* line 569, ia.scss */
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 575, ia.scss */
+  img {
+    float: none;
+  }
+}
+/* line 578, ia.scss */
+.content figure, .post-content figure {
+  line-height: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  display: block;
+  text-align: center;
+  /* wordpress auto-p */
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 586, ia.scss */
+  .content figure, .post-content figure {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 589, ia.scss */
+  .content figure, .post-content figure {
+    margin-bottom: 25px;
+  }
+}
+/* line 591, ia.scss */
+.content figure.align-left, .post-content figure.align-left {
+  text-align: left;
+}
+
+/* line 593, ia.scss */
+.content figure.align-center, .post-content figure.align-center {
+  text-align: center;
+}
+
+/* line 595, ia.scss */
+.content figure.align-right, .post-content figure.align-right {
+  text-align: right;
+}
+
+/* line 597, ia.scss */
+.content figure figcaption, .post-content figure figcaption {
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 600, ia.scss */
+  .content figure figcaption, .post-content figure figcaption {
+    margin-top: 12.5px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 603, ia.scss */
+  .content figure figcaption, .post-content figure figcaption {
+    margin-top: 12.5px;
+  }
+}
+/* line 605, ia.scss */
+.content figure p, .post-content figure p {
+  display: none;
+}
+
+/* line 607, ia.scss */
+.content > a > img, .content > img, .post-content > a > img, .post-content > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+/* line 613, ia.scss */
+.more {
+  color: inherit;
+}
+
+/* line 615, ia.scss */
+.more--click {
+  display: inline;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 618, ia.scss */
+  .more--click {
+    display: none;
+  }
+}
+/* line 620, ia.scss */
+.more--touch {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 623, ia.scss */
+  .more--touch {
+    display: inline;
+  }
+}
+/* line 625, ia.scss */
+.more__text {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* line 629, ia.scss */
+article ol {
+  list-style: decimal outside;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 632, ia.scss */
+  article ol {
+    list-style: decimal inside;
+  }
+}
+/* line 635, ia.scss */
+article ul {
+  list-style: disc outside;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 638, ia.scss */
+  article ul {
+    list-style: disc inside;
+  }
+}
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+/* line 644, ia.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+}
+
+/* the wp comment respond module */
+/* line 656, ia.scss */
+.comments-area {
+  margin: 32px 0 0 0;
+  min-width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 660, ia.scss */
+  .comments-area {
+    margin: 32px 0 0 0;
+  }
+}
+@media only screen and (max-width: 413px) {
+  /* line 663, ia.scss */
+  .comments-area {
+    margin: 25px 0 0 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 666, ia.scss */
+  .comments-area {
+    margin: 25px 0 0 0;
+  }
+}
+/* line 668, ia.scss */
+.comments-area * {
+  display: inline-block;
+}
+
+/* line 671, ia.scss */
+.comments-area script {
+  display: none;
+}
+
+/* line 673, ia.scss */
+.comments-area .comment-content p {
+  text-indent: 0;
+  margin: 0;
+  font-weight: inherit;
+}
+
+/* line 677, ia.scss */
+.comments-area .comment-meta {
+  font-style: italic;
+  display: block;
+}
+
+/* line 680, ia.scss */
+.comments-area .comment-meta .comment-awaiting-moderation {
+  display: block;
+  margin-bottom: 0;
+}
+
+/* line 683, ia.scss */
+.comments-area .pagelink {
+  display: block;
+}
+
+/* line 685, ia.scss */
+.comments-area footer {
+  margin-bottom: 0;
+}
+
+/* line 687, ia.scss */
+.comments-area footer time {
+  margin-bottom: 0;
+}
+
+/* line 689, ia.scss */
+.comments-area footer time:hover {
+  color: #7E7E7E;
+}
+
+/* line 692, ia.scss */
+.comment-respond {
+  display: inline-block;
+  width: 100%;
+  /* add transition */
+}
+
+/* line 696, ia.scss */
+.comment-respond form.is-collapsed .comment-form-author,
+.comment-respond form.is-collapsed .comment-form-email,
+.comment-respond form.is-collapsed .comment-form-tags,
+.comment-respond form.is-collapsed .comment-form-comment label,
+.comment-respond form.is-collapsed .form-submit {
+  display: none;
+  opacity: 0;
+}
+
+/* line 703, ia.scss */
+.comment-respond form.is-collapsed .form-submit {
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 706, ia.scss */
+  .comment-respond form.is-collapsed .form-submit {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 709, ia.scss */
+  .comment-respond form.is-collapsed .form-submit {
+    margin-bottom: 25px;
+  }
+}
+/* line 711, ia.scss */
+.comment-respond form.is-collapsed textarea {
+  height: 49.5356px;
+  /*54px*/
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 715, ia.scss */
+  .comment-respond form.is-collapsed textarea {
+    height: 40.44118px;
+    /*44px*/
+  }
+}
+/* line 718, ia.scss */
+.comment-respond .comment-form {
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  -ms-border-radius: 0 0 0 0;
+  -o-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+}
+
+/* line 724, ia.scss */
+.comment-respond .comment-form.is-collapsed textarea {
+  border-width: 1px 1px 1px 1px;
+}
+
+/* line 726, ia.scss */
+.comment-respond .comment-form.is-collapsed .comments-area {
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 413px) {
+  /* line 729, ia.scss */
+  .comment-respond .comment-form.is-collapsed .comments-area {
+    margin-bottom: 12.5px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 732, ia.scss */
+  .comment-respond .comment-form.is-collapsed .comments-area {
+    margin-bottom: 12.5px;
+  }
+}
+/* line 734, ia.scss */
+.comment-respond .form-submit {
+  display: block;
+}
+
+/* line 736, ia.scss */
+.comment-respond .comment-form p {
+  border-radius: 0 0 0 0;
+}
+
+/* line 738, ia.scss */
+.comment-respond .comment-form p input {
+  border-width: 1px 1px 0px 1px;
+}
+
+/* line 740, ia.scss */
+.comment-respond .comment-form p textarea {
+  border-width: 1px 1px 0px 1px;
+}
+
+/* line 742, ia.scss */
+.comment-respond .comment-form p + p {
+  text-indent: 0;
+}
+
+/* line 744, ia.scss */
+.comment-respond .comment-form .comment-subscription-form,
+.comment-respond .comment-form .logged-in-as,
+.comment-respond .comment-form .comment-subscription-form {
+  border-top: 0;
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 750, ia.scss */
+  .comment-respond .comment-form .comment-subscription-form,
+  .comment-respond .comment-form .logged-in-as,
+  .comment-respond .comment-form .comment-subscription-form {
+    margin-bottom: 12.5px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 755, ia.scss */
+  .comment-respond .comment-form .comment-subscription-form,
+  .comment-respond .comment-form .logged-in-as,
+  .comment-respond .comment-form .comment-subscription-form {
+    margin-bottom: 12.5px;
+  }
+}
+/* line 759, ia.scss */
+.comment-respond .comment-form-comment textarea {
+  border-radius: 0 0 0 0;
+}
+
+/* line 761, ia.scss */
+.comment-respond .comment-form-author,
+.comment-respond .comment-form-email {
+  margin: 0;
+  width: 50%;
+  float: left;
+}
+
+/* line 766, ia.scss */
+.comment-respond .comment-form-author input,
+.comment-respond .comment-form-email input {
+  border-radius: 0 0 0 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 771, ia.scss */
+  .comment-respond .comment-form-author,
+  .comment-respond .comment-form-email {
+    width: 100%;
+  }
+}
+/* line 774, ia.scss */
+.comment-respond .comment-form-email input {
+  border-left: none;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 777, ia.scss */
+  .comment-respond .comment-form-email input {
+    border-left: 1px solid #222222;
+  }
+}
+/* line 779, ia.scss */
+.comment-respond .form-submit input[type="submit"] {
+  border-radius: 0 0 0 0;
+  border-color: #222222;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+/* line 784, ia.scss */
+.comment-respond .form-submit input[type="submit"]:hover {
+  background-color: #404040;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 787, ia.scss */
+  .comment-respond .form-submit input[type="submit"] {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 790, ia.scss */
+  .comment-respond .form-submit input[type="submit"] {
+    margin-bottom: 25px;
+  }
+}
+/* line 792, ia.scss */
+.comment-respond .comment-form-author,
+.comment-respond .comment-form-email,
+.comment-respond .comment-form-tags,
+.comment-respond .comment-form-comment label,
+.comment-respond .form-submit {
+  opacity: 1;
+}
+
+/* line 798, ia.scss */
+.comment-respond .comment-form-author,
+.comment-respond .comment-form-email,
+.comment-respond .comment-form-tags,
+.comment-respond .comment-form-comment label,
+.comment-respond .form-submit,
+.comment-respond textarea {
+  -webkit-animation: fadeIn 0.5s ease-in-out;
+  -moz-animation: fadeIn 0.5s ease-in-out;
+  -ms-animation: fadeIn 0.5s ease-in-out;
+  -o-animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
+  border-radius: 0 0 0 0;
+}
+
+/* line 810, ia.scss */
+.comment-respond label {
+  display: block;
+}
+
+/* line 812, ia.scss */
+.comment-respond p {
+  margin: 0;
+}
+
+/* line 814, ia.scss */
+.comment-respond code {
+  color: #222222;
+}
+
+/* line 817, ia.scss */
+.comment-reply-title,
+.comment-reply-title small {
+  float: right;
+  width: 100%;
+}
+
+/* line 822, ia.scss */
+#cancel-comment-reply-link {
+  position: relative;
+  width: 100%;
+  color: transparent;
+}
+
+/* line 826, ia.scss */
+#cancel-comment-reply-link:before {
+  content: "×";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  color: #222222;
+  display: block;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: center;
+  background: #FDFDFD;
+  border: 1px solid #222222;
+  border-radius: 100%;
+}
+
+/* line 841, ia.scss */
+#cancel-comment-reply-link:before:hover {
+  color: red;
+}
+
+/* line 845, ia.scss */
+.comment-reply-title + .no-print .comment-respond {
+  margin-left: 0;
+}
+
+/* line 848, ia.scss */
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 100%;
+}
+
+/* line 861, ia.scss */
+label {
+  display: inline-block;
+  width: 100%;
+  font-weight: 400;
+}
+
+/* line 867, ia.scss */
+label.grunion-field-label span {
+  font-weight: inherit;
+  color: #222222;
+  margin: 0;
+}
+
+/* line 872, ia.scss */
+label.grunion-field-label span:before {
+  content: "";
+}
+
+/* line 875, ia.scss */
+input,
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="email"],
+textarea {
+  background: transparent;
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid #222222;
+  padding: 8px 16px;
+  line-height: 32px;
+  outline: none;
+  font-weight: inherit;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 902, ia.scss */
+  input,
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="email"],
+  textarea {
+    padding: 6.25px 12.5px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 910, ia.scss */
+  input,
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="email"],
+  textarea {
+    padding: 6.25px 12.5px;
+  }
+}
+/* line 918, ia.scss */
+input[type="submit"] {
+  background: #222222;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* line 935, ia.scss */
+input[type="submit"]:hover {
+  background-color: #404040;
+}
+
+/* line 938, ia.scss */
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-transition: height 0.2s ease-in-out;
+  -moz-transition: height 0.2s ease-in-out;
+  -ms-transition: height 0.2s ease-in-out;
+  -o-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+  max-width: 100%;
+  width: 100%;
+  height: 160px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 953, ia.scss */
+  textarea {
+    height: 125px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 956, ia.scss */
+  textarea {
+    height: 125px;
+  }
+}
+/* line 959, ia.scss */
+.form-error h3, .form-error .pagelink a, .pagelink .form-error a {
+  color: #222222;
+}
+
+/* line 961, ia.scss */
+.form-error .form-errors .form-error-message {
+  list-style-type: none;
+  font-style: italic;
+  color: #222222;
+}
+
+/* line 966, ia.scss */
+.contact-form {
+  float: left;
+  width: 100%;
+}
+
+/* line 969, ia.scss */
+.contact-form input[type="submit"] {
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  -ms-border-radius: 0 0 0 0;
+  -o-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+  float: left;
+}
+
+/* line 976, ia.scss */
+.contact-form input[type="submit"]:hover {
+  background-color: #404040;
+}
+
+/* line 978, ia.scss */
+.contact-form > div {
+  margin-bottom: -13px;
+  float: left;
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* line 983, ia.scss */
+.contact-form > div:first-child input,
+.contact-form > div:first-child input[type="text"],
+.contact-form > div:first-child input[type="tel"],
+.contact-form > div:first-child input[type="number"],
+.contact-form > div:first-child input[type="email"],
+.contact-form > div:first-child textarea {
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  -ms-border-radius: 0 0 0 0;
+  -o-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+}
+
+/* line 994, ia.scss */
+.contact-form > div input,
+.contact-form > div input[type="text"],
+.contact-form > div input[type="tel"],
+.contact-form > div input[type="number"],
+.contact-form > div input[type="email"],
+.contact-form > div textarea {
+  border: none;
+  border-left: 1px solid #222222;
+  border-right: 1px solid #222222;
+  border-top: 1px solid #222222;
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  -ms-border-radius: 0 0 0 0;
+  -o-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+  min-width: 100%;
+}
+
+/* line 1013, ia.scss */
+div#contact-form-17 blockquote {
+  padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+/* line 1022, ia.scss */
+a {
+  color: #222222;
+}
+
+/* line 1024, ia.scss */
+a:visited {
+  color: #222222;
+}
+
+/* line 1026, ia.scss */
+a:hover, a:focus, a:active {
+  color: #222222;
+}
+
+/* line 1029, ia.scss */
+.widget a {
+  color: #222222;
+  text-decoration: none;
+}
+
+/* line 1033, ia.scss */
+a.more-link {
+  display: inline-block;
+}
+
+/* line 1036, ia.scss */
+h1 a,
+h1 a:visited,
+h1 a:hover {
+  color: #222222;
+  text-decoration: none !important;
+}
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+/* line 1045, ia.scss */
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* line 1051, ia.scss */
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+  font-style: italic;
+}
+
+/* line 1058, ia.scss */
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+  font-style: italic;
+}
+
+/* line 1066, ia.scss */
+.site-main .paging-navigation {
+  margin-bottom: 32px;
+}
+
+/* line 1069, ia.scss */
+header .navigation {
+  float: right;
+  width: 100%;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1074, ia.scss */
+  header .navigation {
+    display: none;
+    margin: 0;
+    width: 100%;
+    left: 0px;
+  }
+}
+/* line 1079, ia.scss */
+header .navigation .main-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* line 1085, ia.scss */
+header .navigation .main-navigation .main-menu-wrapper {
+  float: right;
+  position: relative;
+  position: relative;
+  min-height: 1em;
+  text-decoration: none;
+  line-height: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1093, ia.scss */
+  header .navigation .main-navigation .main-menu-wrapper {
+    margin: 25px 0 0 0;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1097, ia.scss */
+  header .navigation .main-navigation .main-menu-wrapper {
+    margin: 25px 0 0 0;
+    line-height: 25px;
+  }
+}
+/* line 1100, ia.scss */
+header .navigation .main-navigation .main-menu-wrapper .menu-main-menu-container {
+  float: left;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1103, ia.scss */
+  header .navigation .main-navigation .main-menu-wrapper .menu-main-menu-container {
+    float: none;
+  }
+}
+/* line 1105, ia.scss */
+header .navigation .menu ul,
+header .navigation .search,
+header .navigation .menu {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  list-style-type: none;
+}
+
+/* line 1113, ia.scss */
+header .navigation .search img {
+  display: none;
+}
+
+/* line 1115, ia.scss */
+header .navigation .search.loading .icon {
+  display: none;
+}
+
+/* line 1117, ia.scss */
+header .navigation .search.loading img {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* line 1120, ia.scss */
+header .navigation #main-menu {
+  visibility: visible;
+}
+
+/* line 1122, ia.scss */
+header .navigation .menu {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1127, ia.scss */
+  header .navigation .menu {
+    margin: 0 12.5px 0 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1130, ia.scss */
+  header .navigation .menu {
+    margin: 0 12.5px 0 0;
+  }
+}
+/* line 1132, ia.scss */
+header .navigation .menu.search-wrapper {
+  margin: 0;
+  float: left;
+  border-bottom: 2px solid transparent;
+  /*prevents from jumping after adding search line*/
+  display: block;
+  position: relative;
+  width: 100%;
+  /* Close Icon aka Handcrafted with love */
+}
+
+/* line 1141, ia.scss */
+header .navigation .menu.search-wrapper .search.current_page_item {
+  line-height: 25px;
+}
+
+/* line 1143, ia.scss */
+header .navigation .menu.search-wrapper .search.current_page_item a {
+  border-bottom: none;
+  line-height: 26px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* line 1149, ia.scss */
+header .navigation ul li {
+  float: left;
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 1152, ia.scss */
+  header .navigation ul li {
+    width: 100%;
+    display: inline-block;
+  }
+}
+/* line 1155, ia.scss */
+header .navigation ul li a {
+  height: 32px;
+  margin-left: 16px;
+  font-style: italic;
+  font-weight: 400;
+  color: #222222;
+  text-decoration: none;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1164, ia.scss */
+  header .navigation ul li a {
+    width: 100%;
+    display: inline-block;
+    height: 25px;
+    margin-left: 12.5px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1170, ia.scss */
+  header .navigation ul li a {
+    height: 25px;
+    margin-left: 12.5px;
+  }
+}
+/* line 1173, ia.scss */
+header .navigation ul li a:hover, header .navigation ul li a:visited {
+  color: #222222;
+}
+
+/* line 1175, ia.scss */
+header .navigation .search-field,
+header .navigation #searchterm,
+header .navigation .menu-main-container,
+header .navigation .search-term,
+header .navigation .menu,
+header .navigation .menu li,
+header .navigation .menu li a {
+  line-height: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1184, ia.scss */
+  header .navigation .search-field,
+  header .navigation #searchterm,
+  header .navigation .menu-main-container,
+  header .navigation .search-term,
+  header .navigation .menu,
+  header .navigation .menu li,
+  header .navigation .menu li a {
+    line-height: 25px;
+    height: inherit;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 1194, ia.scss */
+  header .navigation .search-field,
+  header .navigation #searchterm,
+  header .navigation .menu-main-container,
+  header .navigation .search-term,
+  header .navigation .menu,
+  header .navigation .menu li,
+  header .navigation .menu li a {
+    line-height: 25px;
+    height: inherit;
+  }
+}
+/* line 1203, ia.scss */
+header .navigation .search-field {
+  display: inline-block;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1210, ia.scss */
+  header .navigation .search-field {
+    min-width: auto;
+    display: inline;
+    min-width: inherit;
+  }
+}
+/* line 1214, ia.scss */
+header .navigation #searchterm {
+  position: absolute;
+  bottom: 0;
+  border: none;
+  outline: none;
+  display: inline-block;
+  height: 32px;
+  padding-right: 32px;
+  padding-left: 0;
+  border-radius: 0px;
+  border-bottom: 2px solid #222222;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1226, ia.scss */
+  header .navigation #searchterm {
+    font-size: 16px;
+    padding: 8px 25px 8px 0;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    border: none;
+    font-style: normal;
+    -webkit-appearance: none;
+    width: 100%;
+    border-bottom: 1px solid #222222;
+    border-top: 1px solid #222222;
+    background: url("/wp-content/themes/iA4/img/icn-search.svg") no-repeat right center !important;
+    background-size: 16px !important;
+  }
+}
+/* line 1240, ia.scss */
+header .navigation .menu-wrapper {
+  position: relative;
+  float: right;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1245, ia.scss */
+  header .navigation .menu-wrapper {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+}
+/* line 1249, ia.scss */
+header .navigation .iaicon-menu {
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1252, ia.scss */
+  header .navigation .search-field {
+    position: static;
+  }
+
+  /* line 1254, ia.scss */
+  header .navigation .search {
+    display: none;
+  }
+
+  /* line 1256, ia.scss */
+  header .navigation .main-navigation > div,
+  header .navigation .menu {
+    width: 100%;
+  }
+
+  /* line 1259, ia.scss */
+  header .navigation .menu {
+    margin-bottom: 25px;
+  }
+
+  /* line 1261, ia.scss */
+  header .navigation .menu.hidden {
+    display: none;
+  }
+
+  /* line 1263, ia.scss */
+  header .navigation .searchbox {
+    border-bottom: 1px solid #222222;
+    background: #222222;
+    padding: 12px;
+  }
+
+  /* line 1267, ia.scss */
+  header .navigation .menu ul {
+    width: 100%;
+    list-style: none;
+  }
+
+  /* line 1270, ia.scss */
+  header .navigation .menu li {
+    height: auto;
+    float: none;
+    margin: 0;
+  }
+
+  /* line 1274, ia.scss */
+  header .navigation .menu a {
+    border-bottom: 1px solid #222222;
+    padding: 8px 0;
+    margin-left: 0px;
+    display: block;
+    float: none;
+    vertical-align: baseline;
+  }
+
+  /* line 1281, ia.scss */
+  header .navigation li.current_page_item a {
+    font-weight: bold;
+  }
+
+  /* line 1283, ia.scss */
+  header .navigation li:hover {
+    border-bottom: none !important;
+  }
+
+  /* line 1285, ia.scss */
+  header .navigation .transition .navigation {
+    -webkit-transition: margin-top 0.35s ease-in-out;
+    -moz-transition: margin-top 0.35s ease-in-out;
+    -ms-transition: margin-top 0.35s ease-in-out;
+    -o-transition: margin-top 0.35s ease-in-out;
+    transition: margin-top 0.35s ease-in-out;
+  }
+
+  /* line 1291, ia.scss */
+  header .navigation .search.loading img {
+    opacity: 0.4;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1295, ia.scss */
+  .menu {
+    margin-bottom: 25px;
+  }
+}
+/* line 1297, ia.scss */
+.navigation li a:hover,
+.navigation li.current-menu-item a {
+  background-image: linear-gradient(to bottom, #222222, #222222);
+  text-shadow: -1px -1px 0 #FDFDFD, 1px -1px 0 #FDFDFD, -1px 1px 0 #FDFDFD, 1px 1px 0 #FDFDFD;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 90%;
+  background-position: 0 96%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1306, ia.scss */
+  .navigation li a:hover,
+  .navigation li.current-menu-item a {
+    background-image: none;
+    text-shadow: none;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: inherit;
+  }
+}
+/* line 1314, ia.scss */
+.main-navigation > div {
+  position: relative;
+  float: left;
+}
+
+/* line 1318, ia.scss */
+.paging-navigation {
+  float: none;
+}
+
+/* line 1321, ia.scss */
+.mobile-menu {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  border: 1px solid #000;
+  padding: 12px 12px 9px;
+  cursor: pointer;
+  display: none;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 1335, ia.scss */
+.mobile-menu--has-logo {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1339, ia.scss */
+  .mobile-menu {
+    display: block;
+  }
+}
+/* line 1342, ia.scss */
+.searching header .navigation .main-menu-wrapper {
+  width: 100%;
+}
+
+/* line 1344, ia.scss */
+.searching header .navigation #main-menu {
+  visibility: hidden;
+}
+
+/* line 1346, ia.scss */
+.searching header .navigation .menu.search-wrapper a {
+  font-style: normal;
+}
+
+/* line 1348, ia.scss */
+.searching header .navigation .search-field {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 1353, ia.scss */
+.menu-open header.site-header {
+  height: auto;
+}
+
+@media mobile-medium {
+  /* line 1356, ia.scss */
+  .menu-open header.site-header {
+    margin: 0;
+  }
+}
+/* line 1359, ia.scss */
+.menu-open .navigation {
+  display: block;
+}
+
+/* line 1362, ia.scss */
+.menu-open .mobile-menu {
+  background: #000;
+  color: white;
+}
+
+/* line 1366, ia.scss */
+form .search-field {
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  -ms-border-radius: 0 0 0 0;
+  -o-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+}
+
+/* line 1372, ia.scss */
+form .search-submit {
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  -ms-border-radius: 0 0 0 0;
+  -o-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1380, ia.scss */
+  #new-search-box {
+    display: none;
+  }
+}
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+/* line 1387, ia.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* line 1393, ia.scss */
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+  background-color: #222222;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #222222;
+  display: block;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+/* line 1417, ia.scss */
+.wordpress--alignment, .aligncenter, .alignright, .alignleft {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1423, ia.scss */
+.aligncenter {
+  margin: 5px auto 5px auto;
+}
+
+/* line 1426, ia.scss */
+.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+@media only screen and (max-width: 413px) {
+  /* line 1429, ia.scss */
+  .alignright {
+    margin: 5px 0px 20px 0px;
+  }
+}
+/* line 1432, ia.scss */
+.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+@media only screen and (max-width: 413px) {
+  /* line 1435, ia.scss */
+  .alignleft {
+    margin: 5px 0px 20px 0px;
+  }
+}
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+/* line 1441, ia.scss */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+}
+
+/* line 1456, ia.scss */
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+/* line 1467, ia.scss */
+.widget h2:first-child,
+.widget p:first-child,
+.widget ul:first-child,
+.widget ol:first-child {
+  margin-top: 0;
+}
+
+/* line 1472, ia.scss */
+.widget ul {
+  margin-left: 1em;
+}
+
+/* line 1474, ia.scss */
+.widget .col.small:only-child {
+  width: 100%;
+}
+
+/* line 1476, ia.scss */
+.widget.widget_search .col.small:only-child {
+  text-align: center;
+}
+
+/* line 1478, ia.scss */
+.widget.widget_search .col.small:only-child form {
+  display: inline-block;
+}
+
+/* line 1480, ia.scss */
+.widget.widget_search .col.small:only-child form input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+/* line 1489, ia.scss */
+.sticky {
+  display: block;
+}
+
+/* line 1492, ia.scss */
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+
+/* line 1496, ia.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+/* line 1500, ia.scss */
+.page-links {
+  clear: both;
+}
+
+/* line 1503, ia.scss */
+.home .col.small h2 {
+  margin-bottom: 0px;
+}
+
+/* line 1506, ia.scss */
+.single .post-content > p:first-child {
+  margin-top: 0;
+  text-align: left;
+}
+
+/* line 1510, ia.scss */
+.jetpack-portfolio .entry-content p:first-child {
+  margin-top: 0;
+}
+
+/* line 1513, ia.scss */
+.teaser a {
+  text-decoration: none;
+}
+
+/* line 1516, ia.scss */
+.next-teaser {
+  position: relative;
+  margin: 0 0 32px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1520, ia.scss */
+  .next-teaser {
+    margin: 0 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1523, ia.scss */
+  .next-teaser {
+    margin: 0 0 25px 0;
+  }
+}
+/* line 1525, ia.scss */
+.next-teaser .load-next-modal {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* line 1531, ia.scss */
+.next-teaser .load-next-modal:hover .load-next-modal__bottom {
+  opacity: 1;
+}
+
+/* line 1533, ia.scss */
+.next-teaser .load-next-modal .col,
+.next-teaser .load-next-modal .cols,
+.next-teaser .load-next-modal .center,
+.next-teaser .load-next-modal .front {
+  height: 100%;
+}
+
+/* line 1538, ia.scss */
+.next-teaser .load-next-modal .col {
+  position: relative;
+}
+
+/* line 1540, ia.scss */
+.next-teaser .read-more {
+  display: none;
+}
+
+/* line 1542, ia.scss */
+.next-teaser .mood__info {
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -ms-transition: opacity 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0;
+}
+
+/* mood / hero module */
+/* line 1551, ia.scss */
+.mood {
+  max-width: 1024px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 0 64px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1559, ia.scss */
+  .mood {
+    margin: 0 0 50px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1562, ia.scss */
+  .mood {
+    margin: 0 0 50px 0;
+  }
+}
+/* line 1564, ia.scss */
+.mood a {
+  display: inline-block;
+}
+
+/* line 1566, ia.scss */
+.mood img {
+  width: 100%;
+}
+
+/* line 1568, ia.scss */
+.mood .mood__aspect-ratio {
+  height: auto;
+  width: 100%;
+}
+
+/* line 1571, ia.scss */
+.mood .mood__image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+}
+
+/* line 1577, ia.scss */
+.mood.mood--big {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1580, ia.scss */
+.mood.mood--work {
+  margin: 0 0 32px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1583, ia.scss */
+  .mood.mood--work {
+    margin: 0 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1586, ia.scss */
+  .mood.mood--work {
+    margin: 0 0 25px 0;
+  }
+}
+/* line 1588, ia.scss */
+.mood .mood__info {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  bottom: 32px;
+  left: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1595, ia.scss */
+  .mood .mood__info {
+    bottom: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 1598, ia.scss */
+  .mood .mood__info {
+    bottom: 25px;
+  }
+}
+/* replaces mood on front page */
+/* line 1602, ia.scss */
+.front .mood.mood--big {
+  max-height: 900px;
+  margin-bottom: 0px;
+}
+
+/* line 1605, ia.scss */
+.front figcaption {
+  text-align: right;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 0 64px 0;
+}
+
+/* line 1611, ia.scss */
+.front figcaption a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 1615, ia.scss */
+  .front figcaption {
+    padding: 0 25px;
+    margin: 0 0 50px 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 413px) {
+  /* line 1620, ia.scss */
+  .front figcaption {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1623, ia.scss */
+  .front figcaption {
+    margin: 0 0 50px 0;
+    text-align: center;
+  }
+}
+/* line 1626, ia.scss */
+.front ul.tiles {
+  overflow: hidden;
+}
+
+/* line 1628, ia.scss */
+.front ul.tiles li.tile {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 1631, ia.scss */
+  .front ul.tiles li.tile {
+    width: calc((100% - 27.2px)/2);
+  }
+}
+@media only screen and (max-width: 413px) {
+  /* line 1634, ia.scss */
+  .front ul.tiles li.tile {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1638, ia.scss */
+  .front ul.tiles li.tile {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 413px) {
+  /* line 1642, ia.scss */
+  .front ul.tiles li.tile:first-of-type {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* line 1645, ia.scss */
+  .front ul.tiles li.tile-small:last-child {
+    display: none;
+  }
+}
+@media only screen and (max-width: 413px) {
+  /* line 1648, ia.scss */
+  .front ul.tiles li.tile-small:last-child {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* line 1651, ia.scss */
+  .front ul.tiles {
+    padding: 0 25px;
+    margin-right: 0;
+  }
+
+  /* line 1654, ia.scss */
+  .front ul.tiles li.tile-small:nth-last-child(2) {
+    margin-right: 0px;
+  }
+}
+/* line 1656, ia.scss */
+.front ul.tags {
+  margin-bottom: 0px;
+}
+
+/* line 1659, ia.scss */
+.single-jetpack-portfolio header figure {
+  margin-bottom: 0px;
+}
+
+/* line 1661, ia.scss */
+.single-jetpack-portfolio dl.meta {
+  display: inline-block;
+  margin: 0 0 32px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 1665, ia.scss */
+  .single-jetpack-portfolio dl.meta {
+    margin: 0 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1668, ia.scss */
+  .single-jetpack-portfolio dl.meta {
+    margin: 0 0 25px 0;
+  }
+}
+/* line 1670, ia.scss */
+.single-jetpack-portfolio dl.meta dt,
+.single-jetpack-portfolio dl.meta dd {
+  float: left;
+  padding: 0 0 0 9.5px;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 1676, ia.scss */
+  .single-jetpack-portfolio dl.meta dt,
+  .single-jetpack-portfolio dl.meta dd {
+    padding: 0 0 0 8px;
+  }
+}
+/* line 1679, ia.scss */
+.single-jetpack-portfolio dl.meta dt:first-child,
+.single-jetpack-portfolio dl.meta dd:first-child {
+  padding: 0;
+}
+
+/* line 1682, ia.scss */
+.single-jetpack-portfolio dl.meta dt {
+  font-weight: normal;
+}
+
+/* line 1685, ia.scss */
+.portfolio-tiles {
+  overflow-x: hidden;
+}
+
+/* line 1688, ia.scss */
+.work-examples {
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin-right: -25px;
+  margin-bottom: 0;
+  font-size: 0;
+}
+
+@media only screen and (max-width: 413px) {
+  /* line 1696, ia.scss */
+  .work-examples {
+    margin: 0;
+  }
+}
+/* line 1699, ia.scss */
+.front .work-examples {
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1702, ia.scss */
+  .front .work-examples {
+    margin-bottom: 0;
+  }
+}
+/* line 1705, ia.scss */
+.tile {
+  overflow-x: hidden;
+  margin: 0 25px 32px 0;
+  width: calc(33.33333333333% - 25px);
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 1712, ia.scss */
+  .tile {
+    margin: 0 25px 25px 0;
+    width: calc(50% - 25px);
+  }
+}
+@media only screen and (max-width: 413px) {
+  /* line 1716, ia.scss */
+  .tile {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1720, ia.scss */
+  .tile {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+}
+/* line 1724, ia.scss */
+.tile a {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  text-decoration: none;
+}
+
+/* line 1733, ia.scss */
+.tile-pan {
+  margin: 0 0 12.5px 0;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 1738, ia.scss */
+  .tile-pan {
+    margin: 0 0 12.5px 0;
+  }
+}
+/* line 1741, ia.scss */
+.tile-pan.empty {
+  background-color: #eee;
+}
+
+/* line 1744, ia.scss */
+.tile p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 0;
+  text-indent: 0;
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 1751, ia.scss */
+  .tile p {
+    line-height: 25px;
+  }
+}
+/* line 1753, ia.scss */
+.tile p.meta {
+  font-weight: 700;
+}
+
+/*--------------------------------------------------------------
+10.2 Asides
+--------------------------------------------------------------*/
+/* line 1759, ia.scss */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+10.3 Comments
+--------------------------------------------------------------*/
+/* line 1766, ia.scss */
+.comments {
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-left: 0;
+}
+
+/* line 1771, ia.scss */
+.comments h5 {
+  text-transform: inherit;
+  font-weight: bold;
+  margin-bottom: 0;
+  display: block;
+  padding: 0px;
+}
+
+/* line 1777, ia.scss */
+.comments .comments__item__date {
+  color: #222222;
+  font-weight: normal;
+  font-style: italic;
+  display: inline-block;
+}
+
+/* line 1782, ia.scss */
+.comments .comments__item__content {
+  margin-bottom: 0px;
+  display: block;
+}
+
+/* line 1785, ia.scss */
+.comments li {
+  margin: 0 0 32px 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1790, ia.scss */
+  .comments li {
+    margin: 0 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1793, ia.scss */
+  .comments li {
+    margin: 0 0 25px 0;
+  }
+}
+/* line 1795, ia.scss */
+.comments li .children {
+  min-width: 90%;
+}
+
+/* line 1797, ia.scss */
+.comments li:last-child {
+  border-bottom: none;
+  margin: 0;
+}
+
+/* line 1800, ia.scss */
+.comments ul.children {
+  margin-bottom: 32px;
+  margin-top: 32px;
+  margin-left: 49px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1805, ia.scss */
+  .comments ul.children {
+    margin-left: 20px;
+  }
+}
+/* line 1808, ia.scss */
+.initially-hidden {
+  display: none;
+}
+
+/* line 1811, ia.scss */
+.comment-errors {
+  display: list-item;
+  list-style-type: asterisks;
+}
+
+/* line 1815, ia.scss */
+.comment-errors:empty {
+  display: none;
+}
+
+/* line 1818, ia.scss */
+.comment-form .avatar,
+.comment-author.vcard .avatar {
+  vertical-align: top;
+  margin-left: -47px;
+  float: left;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1824, ia.scss */
+  .comment-form .avatar,
+  .comment-author.vcard .avatar {
+    margin-left: 0;
+    margin-right: 10px;
+    height: 24px;
+    width: auto;
+  }
+}
+/* line 1831, ia.scss */
+.comment-respond {
+  margin-top: 32px;
+  margin-left: 49px;
+}
+
+/* line 1834, ia.scss */
+.comment-respond small {
+  height: 0;
+}
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+/* line 1840, ia.scss */
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* line 1848, ia.scss */
+.page-content .attachment a img,
+.entry-content .attachment a img,
+.comment-content .attachment a img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 100%;
+}
+
+/* Make sure embeds and iframes fit their containers */
+/* line 1857, ia.scss */
+embed,
+iframe,
+object {
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1863, ia.scss */
+  embed,
+  iframe,
+  object {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 1868, ia.scss */
+  embed,
+  iframe,
+  object {
+    margin-bottom: 25px;
+  }
+}
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+/* line 1876, ia.scss */
+.wp-caption-text, .alignleft, .alignright, .aligncenter {
+  margin-bottom: 0;
+  color: #222222;
+  font-style: italic;
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1882, ia.scss */
+  .wp-caption-text, .alignleft, .alignright, .aligncenter {
+    float: none;
+  }
+}
+/* line 1885, ia.scss */
+.alignleft {
+  float: left;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 413px) {
+  /* line 1889, ia.scss */
+  .alignleft {
+    padding-right: 0px;
+  }
+}
+/* line 1892, ia.scss */
+.alignright {
+  float: right;
+}
+
+/* line 1895, ia.scss */
+.aligncenter {
+  float: none;
+}
+
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+/* line 1901, ia.scss */
+.gallery {
+  margin-bottom: 32px;
+  margin-right: calc(32px * -1);
+}
+
+@media only screen and (max-width: 413px) {
+  /* line 1905, ia.scss */
+  .gallery {
+    margin-right: 0;
+  }
+}
+/* line 1907, ia.scss */
+.gallery figure.gallery-term:last-child {
+  margin-right: 0px;
+}
+
+/* line 1909, ia.scss */
+.gallery img.attachment-thumbnail {
+  min-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-right: auto;
+}
+
+/* line 1915, ia.scss */
+.gallery-item {
+  float: left;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+/* line 1921, ia.scss */
+.gallery-item a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 413px) {
+  /* line 1924, ia.scss */
+  .gallery-item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/* line 1928, ia.scss */
+.gallery-columns-1 .gallery-item {
+  width: calc(100% - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+/* line 1932, ia.scss */
+.gallery-columns-1 .gallery-item div {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 413px) {
+  /* line 1936, ia.scss */
+  .gallery-columns-1 .gallery-item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/* line 1940, ia.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: calc((100%/2) - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+/* line 1944, ia.scss */
+.gallery-columns-2 .gallery-item div {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+/* line 1948, ia.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: calc((100%/3) - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+/* line 1952, ia.scss */
+.gallery-columns-3 .gallery-item div {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+/* line 1956, ia.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: calc(25% - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+/* line 1961, ia.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: calc(20% - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+/* line 1966, ia.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: calc((100%/6) - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+/* line 1971, ia.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: calc((100%/7) - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+/* line 1976, ia.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: calc((100%/8) - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+/* line 1981, ia.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: calc((100%/9) - 32px);
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+/* line 1986, ia.scss */
+.gallery-caption {
+  display: block;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 1990, ia.scss */
+  .gallery-responsive, .gallery-columns-2 .gallery-item, .gallery-columns-3 .gallery-item, .gallery-columns-4 .gallery-item, .gallery-columns-5 .gallery-item, .gallery-columns-6 .gallery-item, .gallery-columns-7 .gallery-item, .gallery-columns-8 .gallery-item, .gallery-columns-9 .gallery-item {
+    max-width: calc(50% - 32px);
+    margin-right: 32px;
+    margin-bottom: 32px;
+  }
+
+  /* line 1994, ia.scss */
+  .gallery-responsive div, .gallery-columns-2 .gallery-item div, .gallery-columns-3 .gallery-item div, .gallery-columns-4 .gallery-item div, .gallery-columns-5 .gallery-item div, .gallery-columns-6 .gallery-item div, .gallery-columns-7 .gallery-item div, .gallery-columns-8 .gallery-item div, .gallery-columns-9 .gallery-item div {
+    max-height: 300px;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 413px) {
+  /* line 1998, ia.scss */
+  .gallery-responsive, .gallery-columns-2 .gallery-item, .gallery-columns-3 .gallery-item, .gallery-columns-4 .gallery-item, .gallery-columns-5 .gallery-item, .gallery-columns-6 .gallery-item, .gallery-columns-7 .gallery-item, .gallery-columns-8 .gallery-item, .gallery-columns-9 .gallery-item {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  /* line 2001, ia.scss */
+  .gallery-responsive div, .gallery-columns-2 .gallery-item div, .gallery-columns-3 .gallery-item div, .gallery-columns-4 .gallery-item div, .gallery-columns-5 .gallery-item div, .gallery-columns-6 .gallery-item div, .gallery-columns-7 .gallery-item div, .gallery-columns-8 .gallery-item div, .gallery-columns-9 .gallery-item div {
+    max-height: 300px;
+    overflow: hidden;
+  }
+}
+/*--------------------------------------------------------------
+13.0 Layout
+--------------------------------------------------------------*/
+/* line 2008, ia.scss */
+.center, .front {
+  max-width: 700px;
+  padding: 0 32px;
+  margin: 0 auto 64px auto;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2013, ia.scss */
+  .center, .front {
+    padding: 0 16px;
+    margin: 0 auto 25px auto;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 2017, ia.scss */
+  .center, .front {
+    padding: 0 12.5px;
+    margin: 0 auto 25px auto;
+  }
+}
+/* line 2021, ia.scss */
+.post-content {
+  margin-bottom: 64px;
+}
+
+/* line 2024, ia.scss */
+#content {
+  -webkit-animation: fadeIn 0.6s ease-in-out;
+  -moz-animation: fadeIn 0.6s ease-in-out;
+  -ms-animation: fadeIn 0.6s ease-in-out;
+  -o-animation: fadeIn 0.6s ease-in-out;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* line 2031, ia.scss */
+.loadingbar body {
+  border-top: 4px solid #efefef;
+}
+
+/* line 2034, ia.scss */
+.content-area {
+  margin: 0 0 64px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2037, ia.scss */
+  .content-area {
+    margin: 0 0 50px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 2040, ia.scss */
+  .content-area {
+    margin: 0 0 50px 0;
+  }
+}
+/* line 2043, ia.scss */
+.front {
+  max-width: 1100px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 2047, ia.scss */
+  .front {
+    max-width: 100vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 2050, ia.scss */
+  .front {
+    padding: 0;
+  }
+}
+/* Tiny MCE Editor Styles */
+/* line 2054, ia.scss */
+#tinymce {
+  margin: 32px;
+}
+
+/* line 2059, ia.scss */
+.col > .post {
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2062, ia.scss */
+  .col > .post {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 2065, ia.scss */
+  .col > .post {
+    margin-bottom: 25px;
+  }
+}
+/* line 2068, ia.scss */
+header.site-header {
+  margin: 32px 0 0 0;
+  position: relative;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2073, ia.scss */
+  header.site-header {
+    margin: 25px 0 25px 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 2076, ia.scss */
+  header.site-header {
+    margin: 25px 0 25px 0;
+  }
+}
+/* line 2078, ia.scss */
+header.site-header .header-bg a {
+  text-decoration: none;
+}
+
+/* line 2080, ia.scss */
+header.site-header .header-bg a.header-text {
+  float: left;
+  text-decoration: none;
+  line-height: 32px;
+  clear: both;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2086, ia.scss */
+  header.site-header .header-bg a.header-text {
+    width: calc(100% - 90px);
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 2090, ia.scss */
+  header.site-header .header-bg a.header-text {
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 2093, ia.scss */
+  header.site-header .header-bg {
+    position: relative;
+    background: white;
+    padding: 0;
+    z-index: 499;
+    float: none;
+  }
+}
+/* line 2099, ia.scss */
+header.site-header .logo-no-navigation {
+  text-align: center;
+  max-width: 240px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 2105, ia.scss */
+.header-logo {
+  min-height: 48px;
+}
+
+/* line 2108, ia.scss */
+.header-title-text {
+  font-weight: bold;
+}
+
+/* line 2111, ia.scss */
+.header-title-text, .header-description-text {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 2115, ia.scss */
+div.search {
+  display: none;
+}
+
+/* line 2118, ia.scss */
+.searching div.search {
+  display: inline-block;
+}
+
+/* line 2121, ia.scss */
+.searching .site-header .navigation .menu.search-wrapper {
+  position: relative;
+  border-bottom: 2px solid #222222;
+  width: calc(100% - 16px);
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2126, ia.scss */
+  .searching .site-header .navigation .menu.search-wrapper {
+    border-bottom: 2px solid transparent;
+  }
+}
+/* line 2128, ia.scss */
+.searching .site-header .navigation .menu.search-wrapper div.search {
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+}
+
+/* line 2133, ia.scss */
+.search-x {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  padding: 16px;
+  margin: -16px;
+  font-size: 150%;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2142, ia.scss */
+  .search-x {
+    display: none;
+  }
+}
+/* line 2145, ia.scss */
+.logo-and-navigation {
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+/* line 2149, ia.scss */
+#logo {
+  float: left;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2152, ia.scss */
+  #logo {
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+}
+/* line 2156, ia.scss */
+#logo a {
+  float: left;
+}
+
+/* line 2158, ia.scss */
+#logo a img {
+  max-height: 64px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2161, ia.scss */
+  #logo a img {
+    max-height: 50px;
+  }
+}
+/* line 2164, ia.scss */
+.mobile.menu-open #result {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  margin-top: 32px;
+  border: none;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2173, ia.scss */
+  .mobile.menu-open #result {
+    margin-top: 25px;
+  }
+}
+/* line 2175, ia.scss */
+.mobile.menu-open #result:empty {
+  border: none;
+  margin-top: 0px;
+}
+
+/* line 2178, ia.scss */
+.mobile.menu-open .navigation {
+  margin-top: 0px;
+}
+
+/* line 2181, ia.scss */
+#result {
+  display: block;
+  -webkit-transition: height 0.45s ease-in-out;
+  -moz-transition: height 0.45s ease-in-out;
+  -ms-transition: height 0.45s ease-in-out;
+  -o-transition: height 0.45s ease-in-out;
+  transition: height 0.45s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+  height: 0px;
+}
+
+/* line 2191, ia.scss */
+#result .col:first-child h3, #result .col:first-child .pagelink a, .pagelink #result .col:first-child a {
+  margin-top: 0;
+}
+
+/* line 2193, ia.scss */
+#result:empty {
+  border: none;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2196, ia.scss */
+  #result {
+    border-top: none;
+  }
+}
+/* line 2198, ia.scss */
+#result article {
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2201, ia.scss */
+  #result article {
+    margin-bottom: 25px;
+  }
+}
+/* line 2204, ia.scss */
+#result .highlight {
+  background-clip: border-box;
+  background: #222 !important;
+  text-decoration: none;
+  border-radius: 0;
+  text-shadow: none;
+  padding: 1px;
+  margin: -1px;
+  color: #fff;
+}
+
+/* line 2214, ia.scss */
+.search-term {
+  margin-bottom: 64px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2218, ia.scss */
+  .search-term {
+    margin-bottom: 50px;
+  }
+}
+/* line 2221, ia.scss */
+#searchterm::-ms-clear {
+  display: none;
+}
+
+/* footer module */
+/* line 2225, ia.scss */
+footer {
+  margin: 0 0 32px 0;
+}
+
+/* line 2227, ia.scss */
+footer h2 {
+  margin-bottom: 0px;
+}
+
+/* line 2229, ia.scss */
+footer .footer-menu {
+  margin: 0px;
+  float: left;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2233, ia.scss */
+  footer .footer-menu {
+    margin-bottom: 0;
+    width: 100%;
+    clear: both;
+  }
+}
+/* line 2237, ia.scss */
+footer .footer-menu .menu-item {
+  display: inline-block;
+  padding: 0 16px 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2241, ia.scss */
+  footer .footer-menu .menu-item {
+    padding: 0 12.5px 0 0;
+  }
+}
+@media only screen and (max-width: 374px) {
+  /* line 2244, ia.scss */
+  footer .footer-menu .menu-item {
+    padding: 0 12.5px 0 0;
+  }
+}
+/* line 2246, ia.scss */
+footer .footer-menu .menu-item:last-child {
+  padding: 0 0 0 0;
+}
+
+/* line 2248, ia.scss */
+footer .footer-menu .menu-item a {
+  font-style: italic;
+  color: #222222;
+  text-decoration: none;
+}
+
+/* line 2252, ia.scss */
+footer .footer-menu .menu-item a:hover, footer .footer-menu .menu-item.current-menu-item a {
+  background-image: linear-gradient(to bottom, #222222, #222222);
+  text-shadow: -1px -1px 0 #FDFDFD, 1px -1px 0 #FDFDFD, -1px 1px 0 #FDFDFD, 1px 1px 0 #FDFDFD;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 90%;
+  background-position: 0 96%;
+}
+
+/* line 2259, ia.scss */
+footer .footer-menu .has-icon a {
+  background: #222222;
+  border-radius: 100%;
+  color: white;
+  padding: 5px;
+}
+
+/* line 2264, ia.scss */
+footer .has-icon:first-child,
+footer .has-icon + .has-icon {
+  border-right: none;
+  margin-right: 0px;
+}
+
+/* line 2268, ia.scss */
+footer .footer-menu .menu-item:first-child {
+  padding-left: 0px;
+}
+
+/* line 2270, ia.scss */
+footer .footer-menu .menu-item:last-child {
+  border: 0 none;
+}
+
+/* line 2272, ia.scss */
+footer .copyright-notice {
+  float: right;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2275, ia.scss */
+  footer .copyright-notice {
+    float: left;
+  }
+}
+/* line 2277, ia.scss */
+footer .centered-footer-menu {
+  text-align: center;
+}
+
+/* line 2279, ia.scss */
+footer .centered-footer-menu .footer-menu {
+  float: none;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2282, ia.scss */
+  footer .centered-footer-menu .footer-menu .menu-item {
+    display: inline;
+    float: none;
+    margin-right: 5px;
+  }
+}
+/* line 2287, ia.scss */
+.cols {
+  margin-left: -32px;
+}
+
+/* line 2289, ia.scss */
+.cols .col {
+  padding-left: 32px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 2295, ia.scss */
+.cols .col.fiftyfifty {
+  display: inline;
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (max-width: 413px) {
+  /* line 2300, ia.scss */
+  .cols .col.fiftyfifty {
+    width: 100%;
+  }
+}
+/* line 2302, ia.scss */
+.cols .col.small {
+  width: 33%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2305, ia.scss */
+  .cols .col.small {
+    width: 100%;
+  }
+}
+/* line 2307, ia.scss */
+.cols .col.large {
+  width: 66%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2310, ia.scss */
+  .cols .col.large {
+    width: 100%;
+  }
+}
+/* line 2312, ia.scss */
+.cols .col.full {
+  display: block;
+  width: 100%;
+}
+
+/* line 2315, ia.scss */
+.cols .col.push {
+  margin-left: 33%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2318, ia.scss */
+  .cols .col.push {
+    margin-left: 0px;
+  }
+}
+/* line 2321, ia.scss */
+.cols.table {
+  display: table;
+  width: 100%;
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2326, ia.scss */
+  .cols.table {
+    display: block;
+    width: inherit;
+  }
+}
+/* line 2329, ia.scss */
+.cols.table .col.table-cell {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+/* line 2332, ia.scss */
+.cols.table .col.table-cell:first-child {
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 2335, ia.scss */
+  .cols.table .col.table-cell {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 2338, ia.scss */
+  .cols.table .col.table-cell {
+    display: block;
+    vertical-align: top;
+  }
+}
+/*--------------------------------------------------------------
+14.0 Animations
+--------------------------------------------------------------*/
+@-webkit-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+/*--------------------------------------------------------------
+15.0 Printing
+--------------------------------------------------------------*/
+@page {
+  margin: 1cm;
+}
+@media print {
+  /* line 2387, ia.scss */
+  * {
+    -webkit-print-color-adjust: exact;
+    background-color: white;
+    color: black;
+  }
+
+  /*Resetting Fancy Link Underlines*/
+  /* line 2393, ia.scss */
+  footer a, .navigation li:hover a, .navigation li.current-menu-item a, .entry-content a, p a {
+    text-decoration: underline;
+  }
+
+  /* line 2396, ia.scss */
+  .portfolio-section, .front-page-posts, img, ul {
+    page-break-inside: avoid;
+  }
+
+  /* line 2399, ia.scss */
+  .work-examples {
+    page-break-before: avoid;
+  }
+}
+/*# sourceMappingURL=style.css.map */

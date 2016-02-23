@@ -1,0 +1,208 @@
+/* line 1, baseplate.scss */
+#content {
+  max-width: 32em;
+  margin: 0 auto;
+  padding: 2rem 0.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 19px;
+}
+
+/* line 10, baseplate.scss */
+blockquote {
+  margin-right: 1em;
+  margin-left: 2em;
+  padding: 0;
+}
+
+/* line 17, baseplate.scss */
+::-moz-selection {
+  background: #222;
+  color: #fcfcfc;
+}
+
+/* line 22, baseplate.scss */
+::selection {
+  background: #222;
+  color: #fcfcfc;
+}
+
+/* line 27, baseplate.scss */
+* {
+  outline: 0;
+  border: none;
+}
+
+/* line 32, baseplate.scss */
+ul, ol {
+  padding-left: 0.2em;
+}
+
+/* line 36, baseplate.scss */
+ol li {
+  list-style-position: inside;
+}
+
+/* line 40, baseplate.scss */
+ul li {
+  list-style: none;
+}
+/* line 42, baseplate.scss */
+ul li:before {
+  content: "-\00a0";
+}
+
+/* line 47, baseplate.scss */
+.footnotes {
+  margin-top: 4rem;
+}
+/* line 48, baseplate.scss */
+.footnotes:before {
+  content: '* * *';
+}
+/* line 52, baseplate.scss */
+.footnotes ol, .footnotes ul {
+  margin-top: 2rem;
+}
+
+/* line 57, baseplate.scss */
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+/* line 63, baseplate.scss */
+a.avatar::after {
+  content: none;
+}
+
+/* line 66, baseplate.scss */
+a:hover::after {
+  border-bottom: 1px solid black;
+}
+
+/* line 69, baseplate.scss */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0em;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* line 80, baseplate.scss */
+body {
+  text-align: justify;
+  text-justify: inter-ideographic;
+  line-height: 1.7;
+  background: #fcfcfc;
+  font-family: "Songti TC", monospace;
+  color: #353435;
+}
+
+/* line 88, baseplate.scss */
+pre code {
+  font-family: Menlo,monospace;
+  line-height: 1;
+}
+
+/* line 93, baseplate.scss */
+header {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/* line 99, baseplate.scss */
+a.avatar {
+  border: none;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+/* line 103, baseplate.scss */
+a.avatar img {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 109, baseplate.scss */
+h5, h6, ul, ol, p {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+/* line 114, baseplate.scss */
+h1 {
+  line-height: 1.3;
+  font-size: 1.5em;
+  width: 80%;
+  font-weight: bold;
+  color: black;
+  margin: 0 auto 2em auto;
+  text-align: center;
+}
+
+/* line 123, baseplate.scss */
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  line-height: 1.3;
+  font-size: 1em;
+  color: black;
+}
+
+/* line 130, baseplate.scss */
+h3 {
+  margin-bottom: 1em;
+  line-height: 1.3;
+  font-size: 1em;
+  font-weight: bold;
+  color: gray;
+}
+
+/* line 137, baseplate.scss */
+h4 {
+  margin-top: -2em;
+  margin-bottom: 3em;
+  line-height: 1.3;
+  font-size: 1em;
+  font-weight: bold;
+  color: gray;
+  text-align: center;
+}
+
+@media screen and (max-width: 440px) {
+  /* line 151, baseplate.scss */
+  body #content {
+    font-size: 17px;
+  }
+}
+/* line 157, baseplate.scss */
+li p {
+  margin-bottom: 0;
+}
+
+/* line 161, baseplate.scss */
+.footer {
+  text-transform: uppercase;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.3);
+  padding-left: 0.5rem;
+  text-align: center;
+}
+
+/* line 170, baseplate.scss */
+sup::before {
+  content: "[";
+}
+/* line 173, baseplate.scss */
+sup::after {
+  content: "]";
+}
+
+/* line 179, baseplate.scss */
+sup a {
+  padding: 0 0.05em;
+}
