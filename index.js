@@ -33,7 +33,7 @@ function loadFile(docName) {
 }
 
 function loadFileSuccess(doc) {
-  var converter = new showdown.Converter();
+  var converter = new showdown.Converter({ extensions: [footnotes] });
 
   // HTMLize content.
   var html = converter.makeHtml(doc.content());
